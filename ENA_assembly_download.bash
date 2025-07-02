@@ -14,31 +14,34 @@
 
 # set working directory where you wish to store downloaded files
 #wkdir=/gpfs01/home/mbzlld/data/hagfish/Eptatretus_burgeri_ref
-wkdir=/gpfs01/home/mbzlld/data/hagfish/Eptatretus_atami_ref
-
+#wkdir=/gpfs01/home/mbzlld/data/hagfish/Eptatretus_atami_ref
+wkdir=/gpfs01/home/mbzlld/data/gazelle
 
 # move to the directory in which you want to save the assembly
 cd $wkdir
 
 
-# If you know the accession number you can paste it into the curl command below to see what files are available to download for that assembly
-# This will show you the url for the fasta file and for other associated files if they exist (e.g. annotations)
-curl -s "https://www.ebi.ac.uk/ena/browser/api/xml/GCA_900186335?download=true" # for the inshore hagfish
-curl -s "https://www.ebi.ac.uk/ena/browser/api/xml/GCA_035128595?download=true" # for the brown hagfish
+### If you know the accession number you can paste it into the curl command below to see what files are available to download for that assembly
+### This will show you the url for the fasta file and for other associated files if they exist (e.g. annotations)
+#curl -s "https://www.ebi.ac.uk/ena/browser/api/xml/GCA_900186335?download=true" # for the inshore hagfish
+#curl -s "https://www.ebi.ac.uk/ena/browser/api/xml/GCA_035128595?download=true" # for the brown hagfish
+#curl -s "https://www.ebi.ac.uk/ena/browser/api/xml/GCA_019969365.1?download=true" # for Nanger dama
 
 
-# download the assembly
-# get the link for the fasta assembly file by finding the sequence set on ENA e.g. https://www.ebi.ac.uk/ena/browser/view/FYBX03000000
-# then right click on SET FASTA under Download in the box on the right-hand side of the page and copy the link
-# OR
-# get the url from the curl command above then
-# paste it after wget below
+### download the assembly
+### get the url from the curl command above then
+### paste it after wget below
 
-# e.g. for the Inshore Hagfish Eptatretus burgeri genome assembly (accession: GCA_900186335):
+### e.g. for the Inshore Hagfish Eptatretus burgeri genome assembly (accession: GCA_900186335):
 #wget ftp://ftp.ebi.ac.uk/pub/databases/ena/wgs/public/fyb/FYBX03.fasta.gz
 
-# for the brown hagfish assembly (accession: GCA_035128595):
+### for the brown hagfish assembly (accession: GCA_035128595):
 #wget ftp://ftp.ebi.ac.uk/pub/databases/ena/wgs/public/jax/JAXMNL01.fasta.gz
+
+### for the Nanger dama assembly (accession: GCA_019969365.1):
+wget ftp://ftp.ebi.ac.uk/pub/databases/ena/wgs/public/jah/JAHTZZ01.fasta.gz
+
+
 
 
 
