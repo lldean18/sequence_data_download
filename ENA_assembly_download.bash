@@ -39,7 +39,8 @@ cd $wkdir
 #wget ftp://ftp.ebi.ac.uk/pub/databases/ena/wgs/public/jax/JAXMNL01.fasta.gz
 
 ### for the Nanger dama assembly (accession: GCA_019969365.1):
-wget ftp://ftp.ebi.ac.uk/pub/databases/ena/wgs/public/jah/JAHTZZ01.fasta.gz
+#wget ftp://ftp.ebi.ac.uk/pub/databases/ena/wgs/public/jah/JAHTZZ01.fasta.gz
+wget ftp://ftp.ebi.ac.uk/pub/databases/ena/wgs/public/cak/CAKJTW01.fasta.gz
 
 
 
